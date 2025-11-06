@@ -1,4 +1,37 @@
 baseURL = 'https://trailliferesources.github.io/'
 languageCode = 'en-us'
 title = 'Trail Life USA Resources'
-theme = 'PaperMod'
+theme = 'hugo-book'
+
+# Book theme specific config
+[params]
+  # Enable table of contents on pages
+  BookToC = true
+  
+  # Enable search
+  BookSearch = true
+  
+  # Path to book logo (place in static folder)
+  # BookLogo = '/logo.png'
+  
+  # CRITICAL: Enable "Edit this page" links
+  BookRepo = 'https://github.com/trailliferesources/trailliferesources.github.io'
+  BookEditPath = 'edit/main/content'
+  
+  # Show page navigation (previous/next)
+  BookPageNav = true
+  
+  # Organize menu by folders
+  BookSection = 'docs'
+
+[menu]
+# Top menu navigation
+[[menu.before]]
+  name = "Getting Started"
+  url = "/docs"
+  weight = 1
+
+[[menu.before]]
+  name = "About"
+  url = "/about"
+  weight = 2
